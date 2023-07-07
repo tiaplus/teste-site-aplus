@@ -1,0 +1,1035 @@
+@import url('https://fonts.cdnfonts.com/css/tasa-explorer');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* Adicione essa propriedade */
+    z-index: 1;
+    /* Adicione essa propriedade para que o header fique acima da seção */
+}
+
+header nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+header nav ul li a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* Estilos para a logo */
+.logo {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para o menu */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    display: block;
+    letter-spacing: 1.6px;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'TASA Explorer', sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #555;
+}
+
+/* Adicione as animações aos elementos dentro do header */
+header .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+header .delay {
+    animation-delay: 0.5s;
+}
+
+header .fade-in,
+header .delay {
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#secao_1_index {
+    position: relative;
+    height: 500px;
+    background-image: url('imagens/TUBULAÇÕES.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#secao_1_index::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Cor escura com transparência */
+    z-index: 1;
+}
+
+.section-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-content h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    animation: fade-in 1s ease-in-out;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    max-width: 60%;
+    border-top: 2px solid #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.button-index {
+    color: inherit;
+    text-decoration: none;
+}
+
+.button-index:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.button-index {
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 1s ease-in-out;
+    color: inherit;
+    /* Adicione essa linha para aplicar o efeito de aparecimento */
+}
+
+.shadow__btn-index {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    /* Adicione essa propriedade */
+}
+
+.shadow__btn-index {
+    background: rgb(0, 140, 255);
+    box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.shadow__btn-index:hover {
+    box-shadow: 0 0 5px rgb(0, 140, 255),
+        0 0 25px rgb(0, 140, 255),
+        0 0 50px rgb(0, 140, 255),
+        0 0 100px rgb(0, 140, 255);
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-zoom img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo-zoom:hover img {
+    transform: scale(1.1);
+}
+
+#descriptionAplusText {
+    font-family: 'TASA Explorer', sans-serif;
+    font-size: 21px;
+    align-items: center;
+    text-align: center;
+    margin: 70px auto;
+    max-width: 50%;
+    padding: 20px 0;
+    /* Adiciona espaçamento entre o texto e as bordas */
+    border-top: 1px solid blue;
+    /* Adiciona uma borda superior */
+    border-bottom: 1px solid blue;
+    /* Adiciona uma borda inferior */
+}
+
+#descriptionAplusText::after {
+    content: "";
+    display: block;
+    background-image: url('imagens/TUBULAÇÕES.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+}
+
+#descriptionAplus {
+    padding-right: 100px;
+}
+
+.fade-in-section {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+.slide-in-section {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 1s ease-in-out forwards;
+}
+
+#secao_3_index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 25em;
+    background-color: #000000;
+    text-align: center;
+    max-width: 100%;
+}
+
+.tittleServicesIndex p,
+.tittleServicesIndex h3 {
+    font-family: 'TASA Explorer', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 10px 20px;
+}
+
+.tittleServicesIndex h3 {
+    font-size: 30px;
+}
+
+.tittleServicesIndex p {
+    font-size: 20px;
+}
+
+#secao_1_index h1 {
+    font-family: 'TASA Explorer', sans-serif;
+}
+
+
+
+.icon1ServicesIndex,
+.icon2ServicesIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon1ServicesIndex img,
+.icon2ServicesIndex img {
+    max-width: 100px;
+    height: auto;
+}
+
+#secao_4_index {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#secao_5_index {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 350px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px blue;
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card:hover svg {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+}
+
+#tittleCard {
+    font-size: 1.6em;
+}
+
+#textTittleNoticias {
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.8em;
+    font-family: 'TASA Explorer', sans-serif;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navgation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(last:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+
+#radio2:checked~.navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+
+#radio3:checked~.navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+
+#radio4:checked~.navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 16px;
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .section-content h1 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section-content h1 {
+        font-size: 18px;
+    }
+}
+
+.col_white_amrc {
+    color: #FFF;
+}
+
+footer {
+    width: 100%;
+    min-height: 250px;
+    padding: 10px 0px 25px 0px;
+    background: #06121C url(imagens/teste) no-repeat center center;
+    background-size: cover;
+}
+
+.pt2 {
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    color: #CCC;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+}
+
+.mb10 {
+    padding-bottom: 15px;
+}
+
+.footer_ul_amrc {
+    margin: 0px;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0px 0px 10px 0px;
+}
+
+.footer_ul_amrc li {
+    padding: 0px 0px 5px 0px;
+}
+
+.footer_ul_amrc li a {
+    color: #CCC;
+}
+
+.footer_ul_amrc li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.bottom_border {
+    border-bottom: 1px solid #323f45;
+    padding-bottom: 20px;
+}
+
+.foote_bottom_ul_amrc {
+    list-style-type: none;
+    padding: 0px;
+    display: table;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+.foote_bottom_ul_amrc li {
+    display: inline;
+}
+
+.foote_bottom_ul_amrc li a {
+    color: #999;
+    margin: 0 12px;
+    font-size: 12px;
+}
+
+.social_footer_ul {
+    display: table;
+    margin: 15px auto 0 auto;
+    list-style-type: none;
+}
+
+.social_footer_ul li {
+    padding-left: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.social_footer_ul li a {
+    color: #CCC;
+    border: 1px solid #CCC;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.social_footer_ul li i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+#rodape03 {
+    position: relative;
+    float: right;
+    text-align: left;
+    width: 258px;
+    margin: 60px 0 0 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+#rodape03 h1 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 0;
+    margin: 0;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: 'TASA Explorer', sans-serif;
+}
+
+.card img {
+    max-width: 18%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.paralax-home {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('imagens/shutterstock_1579705957.jpg');
+    opacity: 0.7;
+}
+
+.paralax-txt {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 50%;
+    margin-top: -37px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.paralax-txt h1 {
+    margin: 0 0 -4px 0;
+    font-size: 64px;
+    letter-spacing: 9px;
+}
+
+.clientes-home {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+}
+
+.cardValores {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cardWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contentValores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #212121;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    text-align: center;
+}
+
+.contentValores .heading {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.contentValores .para {
+    line-height: 1.5;
+}
+
+.cardValores::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cardValores:hover::before {
+    height: 100%;
+}
+
+.cardValores:hover {
+    box-shadow: none;
+}
+
+#secao_7_index {
+    padding: 3em;
+}
+
+#secao_8_index {
+    padding-top: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+#secao_8_index h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'TASA Explorer', sans-serif;
+}
+
+/* Estilos para telas pequenas */
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-content h1 {
+        font-size: 28px;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        max-width: 80%;
+    }
+
+    .button-index {
+        max-width: 60%;
+
+    }
+
+    #descriptionAplusText {
+        font-size: 18px;
+        margin: 30px auto;
+        max-width: 80%;
+    }
+
+    .descriptionAplus {
+        padding-right: none;
+    }
+
+    #secao_3_index {
+        align-items: center;
+        justify-content: space-between;
+        justify-content: center;
+        background-color: #000000;
+        max-width: 100%;
+        padding: 0 1em;
+        margin: 0;
+    }
+
+    .icon1ServicesIndex img,
+    .icon2ServicesIndex img {
+        max-width: 70px;
+        height: auto;
+    }
+
+    .tittleServicesIndex p,
+    .tittleServicesIndex h3 {
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+    .tittleServicesIndex h3 {
+        font-size: 20px;
+    }
+
+    .tittleServicesIndex p {
+        font-size: 20px;
+    }
+
+    #secao_5_index {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        padding-left: 0em;
+    }
+
+    #secao_4_index {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .slider {
+        max-width: 80%;
+    }
+
+
+}
+
+/* Estilos para telas médias */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adicione aqui os estilos que deseja aplicar em telas médias */
+}
+
+/* Estilos para telas grandes */
+@media only screen and (min-width: 1025px) {
+    /* Adicione aqui os estilos que deseja aplicar em telas grandes */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* Adicione essa propriedade */
+    z-index: 1;
+    /* Adicione essa propriedade para que o header fique acima da seção */
+}
+
+header nav ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+header nav ul li a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Estilos para a logo */
+.logo {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para o menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    display: block;
+    letter-spacing: 1.6px;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'TASA Explorer', sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #555;
+}
+
+/* Estilos para o botão de menu */
+.menu-toggle {
+    display: none;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Adicione as animações aos elementos dentro do header */
+
+
+
+header .delay {
+    animation-delay: 0.5s;
+}
+
+header .fade-in,
+header .delay {
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media query para tornar o menu responsivo */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+
+    header .menu-toggle {
+        display: block;
+    }
+
+    header .menu-toggle.active {
+        color: #555;
+    }
+
+    header .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .menu.active {
+        display: flex;
+    }
+}
